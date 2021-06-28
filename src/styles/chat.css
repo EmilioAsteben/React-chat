@@ -1,0 +1,92 @@
+.main{
+    flex-basis: 500px;
+    margin: 0 10px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+
+}
+
+.messages{
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: rgba(222, 184, 135, 0.062);
+    flex-grow: 1;
+}
+
+.messages::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+@keyframes slidein {
+    from {
+     transform: scale(0);
+     opacity: 0;
+    }
+  
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+
+.message{
+   
+    width: max-content;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    background: #ffe4c4be;
+    
+    white-space: pre-wrap;
+
+    
+}
+
+.user.message{
+    margin-left: auto;
+    background-color: rgba(163, 107, 219, 0.25);
+}
+
+.loading{
+    animation-name: slidein;
+    animation-duration: .2s;
+}
+
+form{
+    display: flex;
+    margin-top: 15px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.input_message{
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 40px;
+    resize: none;
+    border: 2px solid black;
+}
+
+
