@@ -1,5 +1,5 @@
 /**
- * @typedef {function} setState
+ * @typedef {function} stateSetter
  * @typedef {object} ref
  */
 
@@ -34,9 +34,9 @@ async function handleSubmit(event, text, db, chatBox) {
  * 
  * @param {object}    db                     Database imported from `firebase`
  * @param {ref}       chatBox                `Ref` to chat container
- * @param {setState}  setFetchedMessages     Puts the fethced messages into the state
- * @param {setState}  setText                Controls message input
- * @param {setState}  setMessagesLoading     Toggles classes to animate the first load 
+ * @param {stateSetter}  setFetchedMessages     Puts the fethced messages into the state
+ * @param {stateSetter}  setText                Controls message input
+ * @param {stateSetter}  setMessagesLoading     Toggles classes to animate the first load 
 
  */
 
