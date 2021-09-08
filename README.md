@@ -1,4 +1,4 @@
-# Interactive Taxi-cars Table
+# React Chat powered by Firebase
 
 React chat powered by Firebase (Realtime Database).
 
